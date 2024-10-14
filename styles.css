@@ -1,0 +1,238 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; 
+    display: flex;
+    flex-direction: column; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    width: auto;
+    height: 72px;
+    border-bottom: 1px solid #EAECF0;
+    position: relative;
+}
+
+.text-name {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #354153;
+}
+
+.button-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 44px;
+    height: 44px;
+}
+
+.image-header {
+    width: 24px;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex: 1;
+    justify-content: center;
+}
+
+.logo {
+    width: 32px;
+    height: 32px;
+}
+
+.action-section {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.action-section button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: auto;
+    margin: 0 auto;
+    padding: 2% 10%;
+    gap: 16px;
+    position: relative;
+}
+
+.action-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+    gap: 10px;
+    margin-bottom: 2%;
+}
+
+.button {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    font-size: 16px;
+    color: #354153;
+    gap: 10px;
+}
+
+.leading-icon, .trailing-icon {
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    cursor: pointer;
+}
+
+
+.frame-3 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+}
+
+.frame-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 225px;
+}
+
+.text {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #0D1421;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: nowrap; 
+    gap: 16px;
+    overflow-x: auto;
+}
+
+.card-item {
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    width: 100%; 
+    max-width: 300px; 
+    height: auto;
+    padding: 4px; 
+    gap: 12px; 
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    max-width: 220px; 
+}
+
+.heading {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px; 
+    color: #0D1421;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; 
+}
+
+.brand-name {
+    display: flex;
+    gap: 4px;
+}
+
+.text, .name {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+}
+
+.supporting-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    color: #667085;
+}
+
+
+.page-footer {
+    align-items: center;
+    padding: 24px 10%;
+    width: 100%;
+    height: 72px;
+    background: #FFFFFF;
+}
+
+.text-footer {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #667085;
+    margin: 0 auto;
+}
+
+
+@media (max-width: 768px) {
+    .page-header, .page-footer {
+        padding: 20px 5%;
+    }
+
+    .container {
+        padding: 0 5%;
+    }
+
+    .card-item {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-header, .page-footer {
+        padding: 20px;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .card-item {
+        max-width: 100%;
+    }
+}
